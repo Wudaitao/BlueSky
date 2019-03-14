@@ -1,0 +1,9 @@
+<litepal>
+    <dbname value = "Blue_Sky"/>
+    <version value = "1"/>
+    <list>
+        <mapping class = "com.example.bluesky.db.City"/>
+        <mapping class = "com.example.bluesky.db.Province"/>
+        <mapping class = "com.example.bluesky.db.County"/>
+    </list>
+</litepal>
