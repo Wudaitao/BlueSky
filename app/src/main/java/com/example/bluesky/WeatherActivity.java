@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.bluesky.gson.Forecast;
 import com.example.bluesky.gson.Weather;
+import com.example.bluesky.service.AutoUpdateService;
 import com.example.bluesky.util.HttpUtil;
 import com.example.bluesky.util.Utility;
 
@@ -220,7 +221,8 @@ public class WeatherActivity extends AppCompatActivity {
         carWashText.setText(carWash);
         sportText.setText(sport);
         weatherLayout.setVisibility(View.VISIBLE);
-        //Intent intent = new Intent(this, AutoUpdateService.class);
-        //startService(intent);
+        //j激活后台服务
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 }
