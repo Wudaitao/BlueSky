@@ -3,40 +3,40 @@ package com.example.bluesky.db;
 import org.litepal.crud.DataSupport;
 
 public class City extends DataSupport {
-    private int cityId;
-    private int cityCode;
+    private int id;
     private String cityName;
-    private int provinceCode;
+    private int cityCode;
+    private int provinceId;
 
-    public int getProvinceCode() {
-        return provinceCode;
+    public int getId() {
+        return id;
     }
 
-    public int getCityCode() {
-        return cityCode;
-    }
-
-    public int getCityId() {
-        return cityId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCityName() {
         return cityName;
     }
 
-    public void setProvinceCode(int provinceCode) {
-        this.provinceCode = provinceCode;
-    }
-
     public void setCityName(String cityName) {
         this.cityName = cityName;
+    }
+
+    public int getCityCode() {
+        return cityCode;
     }
 
     public void setCityCode(int cityCode) {
         this.cityCode = cityCode;
     }
 
-    public void setCityId(int cityId) {
-        this.cityId = cityId;
+    public int getProvinceId() {
+        return provinceId;
+    }
+
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
     }
 }
